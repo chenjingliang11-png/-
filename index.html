@@ -1,119 +1,165 @@
-<section class="blueprint-section">
-    <h2 class="section-title">项目蓝图：从工程严谨到营销爆发</h2>
-    
-    <div class="timeline">
-        <div class="timeline-item" data-aos="fade-up">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-                <div class="timeline-date">2024 - 2025</div>
-                <h3>第一阶段：精密调度与效能管理</h3>
-                <p>在江西华冶与高能建设期间，我建立了严苛的进度闭环体系。通过优化流水作业节拍，不仅缩短了结构维修周期，更在风电场项目中提升了 20% 的施工效率。</p>
-                <div class="skill-tags">
-                    <span>进度全周期管理</span>
-                    <span>资源协调优化</span>
-                    <span>成本精细化管控</span>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>陈经梁 | 营销专家 & 项目管理实战派</title>
+    <style>
+        :root {
+            --bg: #0a0a0c;
+            --card-bg: #16161a;
+            --accent: #3b82f6;
+            --accent-glow: rgba(59, 130, 246, 0.4);
+            --success: #10b981;
+            --text: #e4e4e7;
+            --text-dim: #a1a1aa;
+        }
+
+        body {
+            font-family: 'PingFang SC', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+
+        /* --- 导航栏 --- */
+        nav {
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #27272a;
+        }
+        .logo { font-weight: bold; font-size: 20px; letter-spacing: 2px; }
+
+        /* --- 英雄首屏 --- */
+        .hero { padding: 100px 0 60px; text-align: center; }
+        .hero h1 { font-size: 56px; margin: 0; background: linear-gradient(to right, #fff, var(--accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero p { color: var(--text-dim); font-size: 18px; margin-top: 10px; }
+
+        /* --- 核心指标 (数据说话) --- */
+        .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 50px; }
+        .stat-box { background: var(--card-bg); border: 1px solid #27272a; padding: 25px; border-radius: 12px; transition: 0.3s; }
+        .stat-box:hover { border-color: var(--accent); box-shadow: 0 0 20px var(--accent-glow); }
+        .stat-num { font-size: 32px; font-weight: bold; color: var(--accent); }
+        .stat-label { font-size: 14px; color: var(--text-dim); }
+
+        /* --- 时间轴 (项目蓝图) --- */
+        .timeline { margin: 80px 0; position: relative; padding-left: 30px; border-left: 2px solid #27272a; }
+        .timeline-item { position: relative; margin-bottom: 60px; opacity: 0; transform: translateY(30px); transition: 0.8s; }
+        .timeline-item.active { opacity: 1; transform: translateY(0); }
+        .timeline-item::before { content: ''; position: absolute; left: -39px; top: 8px; width: 16px; height: 16px; background: var(--accent); border-radius: 50%; box-shadow: 0 0 10px var(--accent); }
+        .item-card { background: var(--card-bg); padding: 30px; border-radius: 15px; border: 1px solid #27272a; }
+        .item-date { color: var(--accent); font-weight: bold; margin-bottom: 10px; font-size: 14px; }
+        .item-title { font-size: 22px; margin: 0 0 10px; }
+        .item-tags { margin-top: 15px; display: flex; flex-wrap: wrap; gap: 8px; }
+        .item-tags span { background: rgba(59,130,246,0.1); color: var(--accent); padding: 3px 10px; border-radius: 5px; font-size: 12px; }
+
+        /* --- 技能 & 魅力模块 --- */
+        .grid-section { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 80px; }
+        .skills h2, .hobbies h2 { margin-bottom: 30px; border-left: 4px solid var(--accent); padding-left: 15px; }
+        .skill-list { display: flex; flex-wrap: wrap; gap: 10px; }
+        .skill-tag { background: #27272a; padding: 8px 15px; border-radius: 8px; font-size: 14px; }
+
+        @media (max-width: 768px) {
+            .grid-section { grid-template-columns: 1fr; }
+            .hero h1 { font-size: 36px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <nav>
+        <div class="logo">CHEN JING LIANG</div>
+        <div class="contact">15797774991 | cjl20010722@163.com</div>
+    </nav>
+
+    <header class="hero">
+        <h1>陈经梁</h1>
+        <p>24岁 | 市场营销本科 [cite: 6, 13] | 跨界项目管理专家 </p>
+        <div class="stats">
+            <div class="stat-box">
+                <div class="stat-num">100%</div>
+                <div class="stat-label">2026开门红目标达成率 [cite: 20]</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-num">396k+</div>
+                <div class="stat-label">年度标保 (APE) [cite: 21]</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-num">11人</div>
+                <div class="stat-label">精英团队管理规模 [cite: 19]</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-num">+20%</div>
+                <div class="stat-label">工程施工效率提升 [cite: 25]</div>
+            </div>
+        </div>
+    </header>
+
+    <section class="timeline">
+        <div class="timeline-item">
+            <div class="item-card">
+                <div class="item-date">2025.07 - 至今 [cite: 16]</div>
+                <h3 class="item-title">百年人寿江西分公司 | 部经理 [cite: 17, 18]</h3>
+                <p>负责部门人才梯队建设与日常经营管理，通过精准获客与面试选拔，成功组建并稳定运营一支11人的专业保险代理人团队 [cite: 19]。</p>
+                <div class="item-tags">
+                    <span>团队建设</span><span>早会经营</span><span>实战辅导</span><span>APE 39.6万 [cite: 21]</span>
                 </div>
             </div>
         </div>
 
-        <div class="timeline-item" data-aos="fade-up">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-                <div class="timeline-date">2025.07 至今</div>
-                <h3>第二阶段：人才梯队与组织扩张</h3>
-                <p>将工程管理的“节点意识”引入保险行业。负责百年人寿江西分公司部门人才建设，通过精准获客与面试选拔，成功组建并稳定运营一支 11 人的专业团队。</p>
-                <div class="skill-tags">
-                    <span>人才选拔</span>
-                    <span>早会经营机制</span>
-                    <span>实战辅导</span>
+        <div class="timeline-item">
+            <div class="item-card">
+                <div class="item-date">2024.07 - 2025.05 [cite: 22, 26]</div>
+                <h3 class="item-title">工程项目管理实战 | 华冶特种 & 高能建设 [cite: 23, 27]</h3>
+                <p>负责加固工程及风电场项目管理。协调业主、监理等多方资源，通过优化流水作业，在严控质量的前提下显著提升施工效能 [cite: 25, 29, 30]。</p>
+                <div class="item-tags">
+                    <span>进度管控</span><span>多方协调</span><span>成本监控 [cite: 31]</span><span>效能分析</span>
                 </div>
             </div>
         </div>
+    </section>
 
-        <div class="timeline-item" data-aos="fade-up">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-                <div class="timeline-date">2026 巅峰时刻</div>
-                <h3>第三阶段：100% 目标达成与价值贡献</h3>
-                <p>在 2026 年度“开门红”战役中，带领团队实现 APE 396,486 元。通过高件均保单经营与二次开发，确保了团队在规模增长的同时具备可持续盈利能力。</p>
-                <div class="skill-tags">
-                    <span>100% 目标达成</span>
-                    <span>二次开发策略</span>
-                    <span>品质管理</span>
-                </div>
+    <section class="grid-section">
+        <div class="skills">
+            <h2>专业硬核</h2>
+            <div class="skill-list">
+                <span class="skill-tag">市场营销学 [cite: 14]</span>
+                <span class="skill-tag">消费者行为学 [cite: 14]</span>
+                <span class="skill-tag">新媒体营销 [cite: 14]</span>
+                <span class="skill-tag">英语四级 [cite: 43]</span>
+                <span class="skill-tag">普通话二级 [cite: 45]</span>
             </div>
         </div>
-    </div>
-</section>
-
-<style>
-    .blueprint-section { padding: 60px 0; }
-    .section-title { text-align: center; margin-bottom: 50px; color: var(--accent); }
-    
-    .timeline {
-        position: relative;
-        max-width: 800px;
-        margin: 0 auto;
-        padding-left: 30px;
-        border-left: 2px solid #27272a;
-    }
-
-    .timeline-item {
-        position: relative;
-        margin-bottom: 50px;
-        opacity: 0; /* 初始透明，配合动画 */
-        transform: translateY(30px);
-        transition: all 0.8s ease-out;
-    }
-
-    /* 模拟滚动触发后的类 */
-    .timeline-item.is-visible {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-    .timeline-dot {
-        position: absolute;
-        left: -39px;
-        top: 5px;
-        width: 16px;
-        height: 16px;
-        background: var(--accent);
-        border-radius: 50%;
-        box-shadow: 0 0 10px var(--accent-glow);
-    }
-
-    .timeline-content {
-        background: var(--card-bg);
-        padding: 24px;
-        border-radius: 12px;
-        border: 1px solid #27272a;
-    }
-
-    .timeline-date { color: var(--accent); font-weight: bold; margin-bottom: 8px; }
-    .skill-tags { margin-top: 15px; }
-    .skill-tags span {
-        display: inline-block;
-        background: rgba(255, 255, 255, 0.05);
-        padding: 4px 10px;
-        border-radius: 4px;
-        font-size: 12px;
-        margin-right: 8px;
-        color: var(--text-secondary);
-    }
-</style>
+        <div class="hobbies">
+            <h2>个人魅力</h2>
+            <div class="skill-list">
+                <span class="skill-tag">书法 (毛笔字) </span>
+                <span class="skill-tag">擒拿格斗 </span>
+                <span class="skill-tag">咏春拳 </span>
+                <span class="skill-tag">篮球/羽毛球 </span>
+            </div>
+        </div>
+    </section>
+</div>
 
 <script>
-    const observerOptions = { threshold: 0.2 };
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('is-visible');
+                entry.target.classList.add('active');
             }
         });
-    }, observerOptions);
+    }, { threshold: 0.1 });
 
-    document.querySelectorAll('.timeline-item').forEach(item => {
-        observer.observe(item);
-    });
+    document.querySelectorAll('.timeline-item').forEach(el => observer.observe(el));
 </script>
+
+</body>
+</html>
