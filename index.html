@@ -1,0 +1,119 @@
+<section class="blueprint-section">
+    <h2 class="section-title">项目蓝图：从工程严谨到营销爆发</h2>
+    
+    <div class="timeline">
+        <div class="timeline-item" data-aos="fade-up">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <div class="timeline-date">2024 - 2025</div>
+                <h3>第一阶段：精密调度与效能管理</h3>
+                <p>在江西华冶与高能建设期间，我建立了严苛的进度闭环体系。通过优化流水作业节拍，不仅缩短了结构维修周期，更在风电场项目中提升了 20% 的施工效率。</p>
+                <div class="skill-tags">
+                    <span>进度全周期管理</span>
+                    <span>资源协调优化</span>
+                    <span>成本精细化管控</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-up">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <div class="timeline-date">2025.07 至今</div>
+                <h3>第二阶段：人才梯队与组织扩张</h3>
+                <p>将工程管理的“节点意识”引入保险行业。负责百年人寿江西分公司部门人才建设，通过精准获客与面试选拔，成功组建并稳定运营一支 11 人的专业团队。</p>
+                <div class="skill-tags">
+                    <span>人才选拔</span>
+                    <span>早会经营机制</span>
+                    <span>实战辅导</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-up">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <div class="timeline-date">2026 巅峰时刻</div>
+                <h3>第三阶段：100% 目标达成与价值贡献</h3>
+                <p>在 2026 年度“开门红”战役中，带领团队实现 APE 396,486 元。通过高件均保单经营与二次开发，确保了团队在规模增长的同时具备可持续盈利能力。</p>
+                <div class="skill-tags">
+                    <span>100% 目标达成</span>
+                    <span>二次开发策略</span>
+                    <span>品质管理</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .blueprint-section { padding: 60px 0; }
+    .section-title { text-align: center; margin-bottom: 50px; color: var(--accent); }
+    
+    .timeline {
+        position: relative;
+        max-width: 800px;
+        margin: 0 auto;
+        padding-left: 30px;
+        border-left: 2px solid #27272a;
+    }
+
+    .timeline-item {
+        position: relative;
+        margin-bottom: 50px;
+        opacity: 0; /* 初始透明，配合动画 */
+        transform: translateY(30px);
+        transition: all 0.8s ease-out;
+    }
+
+    /* 模拟滚动触发后的类 */
+    .timeline-item.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .timeline-dot {
+        position: absolute;
+        left: -39px;
+        top: 5px;
+        width: 16px;
+        height: 16px;
+        background: var(--accent);
+        border-radius: 50%;
+        box-shadow: 0 0 10px var(--accent-glow);
+    }
+
+    .timeline-content {
+        background: var(--card-bg);
+        padding: 24px;
+        border-radius: 12px;
+        border: 1px solid #27272a;
+    }
+
+    .timeline-date { color: var(--accent); font-weight: bold; margin-bottom: 8px; }
+    .skill-tags { margin-top: 15px; }
+    .skill-tags span {
+        display: inline-block;
+        background: rgba(255, 255, 255, 0.05);
+        padding: 4px 10px;
+        border-radius: 4px;
+        font-size: 12px;
+        margin-right: 8px;
+        color: var(--text-secondary);
+    }
+</style>
+
+<script>
+    const observerOptions = { threshold: 0.2 };
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.timeline-item').forEach(item => {
+        observer.observe(item);
+    });
+</script>
